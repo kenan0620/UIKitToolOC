@@ -12,6 +12,7 @@
 
 #import "UIKitToolOC.h"
 #import "AdaptTableView.h"
+#import "DecimalTextField.h"
 
 FOUNDATION_EXPORT double UIKitToolOCVersionNumber;
 FOUNDATION_EXPORT const unsigned char UIKitToolOCVersionString[];
