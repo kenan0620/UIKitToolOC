@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIKitToolOC'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'UIKitToolOC 常用的组件库.'
   s.homepage         = 'https://github.com/kenan0620/UIKitToolOC'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -26,6 +26,13 @@ Pod::Spec.new do |s|
   s.subspec 'UITextField' do |ss|
       ss.ios.deployment_target = '11.0'
       ss.source_files = 'UIKitToolOC/Classes/{*}TextField.{h,m}'
+  end
+  
+  s.subspec 'Pop' do |ss|
+      ss.ios.deployment_target = '11.0'
+      ss.source_files = 'UIKitToolOC/Classes/Pop{*}.{h,m}'
+      ss.dependency 'Masonry'
+      ss.dependency 'CategoryToolOC/UIView'
   end
   
 end

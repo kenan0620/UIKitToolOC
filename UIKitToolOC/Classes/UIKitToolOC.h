@@ -9,5 +9,9 @@
 #define UIKitToolOC_h
 
 #import "AdaptTableView.h"
+#import "DecimalTextField.h"
+
+#import "PopVC.h"
+#import "PopConfig.h"
 
 #endif /* UIKitToolOC_h */

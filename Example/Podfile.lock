@@ -1,19 +1,32 @@
 PODS:
-  - UIKitToolOC (0.1.1):
-    - UIKitToolOC/Adapt (= 0.1.1)
-    - UIKitToolOC/UITextField (= 0.1.1)
-  - UIKitToolOC/Adapt (0.1.1)
-  - UIKitToolOC/UITextField (0.1.1)
+  - CategoryToolOC/UIView (0.2.0)
+  - Masonry (1.1.0)
+  - UIKitToolOC (0.1.2):
+    - UIKitToolOC/Adapt (= 0.1.2)
+    - UIKitToolOC/Pop (= 0.1.2)
+    - UIKitToolOC/UITextField (= 0.1.2)
+  - UIKitToolOC/Adapt (0.1.2)
+  - UIKitToolOC/Pop (0.1.2):
+    - CategoryToolOC/UIView
+    - Masonry
+  - UIKitToolOC/UITextField (0.1.2)
 
 DEPENDENCIES:
   - UIKitToolOC (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CategoryToolOC
+    - Masonry
 
 EXTERNAL SOURCES:
   UIKitToolOC:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UIKitToolOC: 2ebcd52b042fe27aa8851d22fd92febdd4538986
+  CategoryToolOC: 73383854cc33a10fb56e51893d1aac3153f010c6
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  UIKitToolOC: 5c844e5b4383aa96fb40db2111f250b5707cbe7a
 
 PODFILE CHECKSUM: ac1748ac8c044e36d5409e8a2dee47a2e5a4422b
 

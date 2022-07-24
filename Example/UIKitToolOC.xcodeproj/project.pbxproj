@@ -349,10 +349,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-UIKitToolOC_Example/Pods-UIKitToolOC_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CategoryToolOC/CategoryToolOC.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/UIKitToolOC/UIKitToolOC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CategoryToolOC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIKitToolOC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
