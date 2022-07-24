@@ -1,0 +1,6 @@
+framework module UIKitToolOC {
+  umbrella header "UIKitToolOC-umbrella.h"
+
+  export *
+  module * { export * }
+}

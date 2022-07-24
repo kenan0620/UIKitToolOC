@@ -1,0 +1,18 @@
+PODS:
+  - UIKitToolOC (0.1.0):
+    - UIKitToolOC/Adapt (= 0.1.0)
+  - UIKitToolOC/Adapt (0.1.0)
+
+DEPENDENCIES:
+  - UIKitToolOC (from `../`)
+
+EXTERNAL SOURCES:
+  UIKitToolOC:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UIKitToolOC: 0673787383581238af5ca098310216061ef7d080
+
+PODFILE CHECKSUM: ac1748ac8c044e36d5409e8a2dee47a2e5a4422b
+
+COCOAPODS: 1.11.2

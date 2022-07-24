@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '11.0'
+
+target 'UIKitToolOC_Example' do
+  pod 'UIKitToolOC', :path => '../'
+
+  target 'UIKitToolOC_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
