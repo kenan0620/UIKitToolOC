@@ -14,6 +14,7 @@
 #import "AdaptTableView.h"
 #import "PopConfig.h"
 #import "PopVC.h"
+#import "TimePicker.h"
 #import "DecimalTextField.h"
 
 FOUNDATION_EXPORT double UIKitToolOCVersionNumber;

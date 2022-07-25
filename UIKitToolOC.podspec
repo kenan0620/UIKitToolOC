@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIKitToolOC'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'UIKitToolOC 常用的组件库.'
   s.homepage         = 'https://github.com/kenan0620/UIKitToolOC'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -33,6 +33,15 @@ Pod::Spec.new do |s|
       ss.source_files = 'UIKitToolOC/Classes/Pop{*}.{h,m}'
       ss.dependency 'Masonry'
       ss.dependency 'CategoryToolOC/UIView'
+  end
+  
+  s.subspec 'UIPickerView' do |ss|
+      ss.ios.deployment_target = '11.0'
+      ss.source_files = 'UIKitToolOC/Classes/{*}Picker.{h,m}'
+      ss.dependency 'Masonry'
+      ss.dependency 'CategoryToolOC/Date'
+      ss.dependency 'CategoryToolOC/UIColor'
+      ss.dependency 'CategoryToolOC/UIFont'
   end
   
 end
