@@ -4,21 +4,23 @@ PODS:
   - CategoryToolOC/UIFont (0.2.1)
   - CategoryToolOC/UIView (0.2.1)
   - Masonry (1.1.0)
-  - UIKitToolOC (0.1.3):
-    - UIKitToolOC/Adapt (= 0.1.3)
-    - UIKitToolOC/Pop (= 0.1.3)
-    - UIKitToolOC/UIPickerView (= 0.1.3)
-    - UIKitToolOC/UITextField (= 0.1.3)
-  - UIKitToolOC/Adapt (0.1.3)
-  - UIKitToolOC/Pop (0.1.3):
+  - UIKitToolOC (0.1.4):
+    - UIKitToolOC/Adapt (= 0.1.4)
+    - UIKitToolOC/Pop (= 0.1.4)
+    - UIKitToolOC/UILabel (= 0.1.4)
+    - UIKitToolOC/UIPickerView (= 0.1.4)
+    - UIKitToolOC/UITextField (= 0.1.4)
+  - UIKitToolOC/Adapt (0.1.4)
+  - UIKitToolOC/Pop (0.1.4):
     - CategoryToolOC/UIView
     - Masonry
-  - UIKitToolOC/UIPickerView (0.1.3):
+  - UIKitToolOC/UILabel (0.1.4)
+  - UIKitToolOC/UIPickerView (0.1.4):
     - CategoryToolOC/Date
     - CategoryToolOC/UIColor
     - CategoryToolOC/UIFont
     - Masonry
-  - UIKitToolOC/UITextField (0.1.3)
+  - UIKitToolOC/UITextField (0.1.4)
 
 DEPENDENCIES:
   - UIKitToolOC (from `../`)
@@ -35,7 +37,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   CategoryToolOC: 66c7d06707f5410b2c02192abce049f81dcabe2c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  UIKitToolOC: 4b486828b7944de5db761caf01fd27a4cc94c944
+  UIKitToolOC: 340eba0eaa9cbed46e7ad7255c7c939ac6ce874f
 
 PODFILE CHECKSUM: ac1748ac8c044e36d5409e8a2dee47a2e5a4422b
 

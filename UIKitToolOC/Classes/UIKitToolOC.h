@@ -11,6 +11,8 @@
 #import "AdaptTableView.h"
 #import "DecimalTextField.h"
 
+#import "MarginLabel.h"
+
 #import "PopVC.h"
 #import "PopConfig.h"
 

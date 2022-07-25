@@ -14,6 +14,7 @@
 #import "AdaptTableView.h"
 #import "PopConfig.h"
 #import "PopVC.h"
+#import "MarginLabel.h"
 #import "TimePicker.h"
 #import "DecimalTextField.h"
 
