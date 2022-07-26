@@ -14,7 +14,7 @@
 #import "MarginLabel.h"
 
 #import "NetworkConfig.h"
-#import "Request.h"
+#import "NetworkRequest.h"
 
 #import "PopVC.h"
 #import "PopConfig.h"

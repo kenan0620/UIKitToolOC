@@ -1,5 +1,5 @@
 //
-//  Request.h
+//  NetworkRequest.h
 //  UIKitToolOC
 //
 //  Created by 柯南 on 2022/7/26.
@@ -8,7 +8,6 @@
 #import <YTKNetwork/YTKNetwork.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
 ///  HTTP Request method.
 typedef NS_ENUM(NSInteger, RequestMethod) {
     RequestMethodGET = 0,
@@ -19,7 +18,7 @@ typedef NS_ENUM(NSInteger, RequestMethod) {
     RequestMethodPATCH,
 };
 
-@interface Request : YTKRequest<YTKRequestDelegate>
+@interface NetworkRequest : YTKRequest<YTKRequestDelegate>
 /// 请求地址
 @property (nonatomic, copy) NSString *url;
 /// 请求参数

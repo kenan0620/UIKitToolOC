@@ -1,16 +1,16 @@
 //
-//  Request.m
+//  NetworkRequest.m
 //  UIKitToolOC
 //
 //  Created by 柯南 on 2022/7/26.
 //
 
-#import "Request.h"
+#import "NetworkRequest.h"
 
 #import "NetworkConfig.h"
 #import <YTKNetwork/YTKNetworkAgent.h>
 
-@implementation Request
+@implementation NetworkRequest
 - (void)start{
     YTKNetworkAgent *agent = [YTKNetworkAgent sharedAgent];
     NSString *keypath = @"jsonResponseSerializer.acceptableContentTypes";
