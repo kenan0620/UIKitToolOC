@@ -1,6 +1,6 @@
 {
   "name": "UIKitToolOC",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "summary": "UIKitToolOC 常用的组件库.",
   "homepage": "https://github.com/kenan0620/UIKitToolOC",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/kenan0620/UIKitToolOC.git",
-    "tag": "0.1.4"
+    "tag": "0.1.5"
   },
   "social_media_url": "https://www.jianshu.com/u/aa2d07ae7c2f",
   "platforms": {
@@ -22,30 +22,19 @@
   "subspecs": [
     {
       "name": "Adapt",
-      "platforms": {
-        "ios": "11.0"
-      },
       "source_files": "UIKitToolOC/Classes/Adapt{*}.{h,m}"
     },
     {
-      "name": "UILabel",
-      "platforms": {
-        "ios": "11.0"
-      },
-      "source_files": "UIKitToolOC/Classes/{*}Label.{h,m}"
-    },
-    {
-      "name": "UITextField",
-      "platforms": {
-        "ios": "11.0"
-      },
-      "source_files": "UIKitToolOC/Classes/{*}TextField.{h,m}"
+      "name": "Network",
+      "source_files": "Network",
+      "dependencies": {
+        "YTKNetwork": [
+
+        ]
+      }
     },
     {
       "name": "Pop",
-      "platforms": {
-        "ios": "11.0"
-      },
       "source_files": "UIKitToolOC/Classes/Pop{*}.{h,m}",
       "dependencies": {
         "Masonry": [
@@ -57,10 +46,11 @@
       }
     },
     {
+      "name": "UILabel",
+      "source_files": "UIKitToolOC/Classes/{*}Label.{h,m}"
+    },
+    {
       "name": "UIPickerView",
-      "platforms": {
-        "ios": "11.0"
-      },
       "source_files": "UIKitToolOC/Classes/{*}Picker.{h,m}",
       "dependencies": {
         "Masonry": [
@@ -76,6 +66,10 @@
 
         ]
       }
+    },
+    {
+      "name": "UITextField",
+      "source_files": "UIKitToolOC/Classes/{*}TextField.{h,m}"
     }
   ]
 }
