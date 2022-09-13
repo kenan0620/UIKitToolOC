@@ -10,13 +10,12 @@
 #endif
 #endif
 
-#import "DateFormatHeader.h"
-#import "NSDate+Category.h"
-#import "NSDateFormatter+Category.h"
-#import "NSString+DateCategory.h"
-#import "UIColor+Category.h"
-#import "UIFont+Category.h"
-#import "UIView+Category.h"
+#import "UIImage+Color.h"
+#import "UIImage+Gif.h"
+#import "UIImage+Image.h"
+#import "UIImage+Larger.h"
+#import "UIImage+Rotate.h"
+#import "UIImage+SubImage.h"
 
 FOUNDATION_EXPORT double CategoryToolOCVersionNumber;
 FOUNDATION_EXPORT const unsigned char CategoryToolOCVersionString[];

@@ -9,28 +9,30 @@ PODS:
   - CategoryToolOC/Date (0.2.1)
   - CategoryToolOC/UIColor (0.2.1)
   - CategoryToolOC/UIFont (0.2.1)
+  - CategoryToolOC/UIImage (0.2.2)
   - CategoryToolOC/UIView (0.2.1)
   - Masonry (1.1.0)
-  - UIKitToolOC (0.1.6):
-    - UIKitToolOC/Adapt (= 0.1.6)
-    - UIKitToolOC/Network (= 0.1.6)
-    - UIKitToolOC/Pop (= 0.1.6)
-    - UIKitToolOC/UILabel (= 0.1.6)
-    - UIKitToolOC/UIPickerView (= 0.1.6)
-    - UIKitToolOC/UITextField (= 0.1.6)
-  - UIKitToolOC/Adapt (0.1.6)
-  - UIKitToolOC/Network (0.1.6):
+  - UIKitToolOC (0.1.7):
+    - UIKitToolOC/Adapt (= 0.1.7)
+    - UIKitToolOC/Network (= 0.1.7)
+    - UIKitToolOC/Pop (= 0.1.7)
+    - UIKitToolOC/UILabel (= 0.1.7)
+    - UIKitToolOC/UIPickerView (= 0.1.7)
+    - UIKitToolOC/UITextField (= 0.1.7)
+  - UIKitToolOC/Adapt (0.1.7)
+  - UIKitToolOC/Network (0.1.7):
     - YTKNetwork
-  - UIKitToolOC/Pop (0.1.6):
+  - UIKitToolOC/Pop (0.1.7):
     - CategoryToolOC/UIView
     - Masonry
-  - UIKitToolOC/UILabel (0.1.6)
-  - UIKitToolOC/UIPickerView (0.1.6):
+  - UIKitToolOC/UILabel (0.1.7)
+  - UIKitToolOC/UIPickerView (0.1.7):
     - CategoryToolOC/Date
     - CategoryToolOC/UIColor
     - CategoryToolOC/UIFont
     - Masonry
-  - UIKitToolOC/UITextField (0.1.6)
+  - UIKitToolOC/UITextField (0.1.7):
+    - CategoryToolOC/UIImage
   - YTKNetwork (3.0.6):
     - AFNetworking/NSURLSession (~> 4.0)
 
@@ -52,7 +54,7 @@ SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   CategoryToolOC: 66c7d06707f5410b2c02192abce049f81dcabe2c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  UIKitToolOC: fe263d55f3b0bc1708fbd3bcb29db6c903ca3726
+  UIKitToolOC: 255772a8a010df9627282e0f46da68f3b1c4aeaf
   YTKNetwork: c16be90b06be003de9e9cd0d3b187cc8eaf35c04
 
 PODFILE CHECKSUM: ac1748ac8c044e36d5409e8a2dee47a2e5a4422b

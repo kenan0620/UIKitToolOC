@@ -19,6 +19,8 @@
 #import "MarginLabel.h"
 #import "TimePicker.h"
 #import "DecimalTextField.h"
+#import "IDCardTextField.h"
+#import "KeyboardIDCardView.h"
 
 FOUNDATION_EXPORT double UIKitToolOCVersionNumber;
 FOUNDATION_EXPORT const unsigned char UIKitToolOCVersionString[];
