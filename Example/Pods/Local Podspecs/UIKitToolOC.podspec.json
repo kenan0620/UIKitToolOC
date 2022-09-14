@@ -1,6 +1,6 @@
 {
   "name": "UIKitToolOC",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "summary": "UIKitToolOC 常用的组件库.",
   "homepage": "https://github.com/kenan0620/UIKitToolOC",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/kenan0620/UIKitToolOC.git",
-    "tag": "0.1.7"
+    "tag": "0.1.8"
   },
   "social_media_url": "https://www.jianshu.com/u/aa2d07ae7c2f",
   "platforms": {
@@ -66,6 +66,10 @@
 
         ]
       }
+    },
+    {
+      "name": "UISwitch",
+      "source_files": "UIKitToolOC/Classes/{*}Switch.{h,m}"
     },
     {
       "name": "UITextField",

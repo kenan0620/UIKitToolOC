@@ -18,6 +18,7 @@
 #import "PopVC.h"
 #import "MarginLabel.h"
 #import "TimePicker.h"
+#import "TextSwitch.h"
 #import "DecimalTextField.h"
 #import "IDCardTextField.h"
 #import "KeyboardIDCardView.h"

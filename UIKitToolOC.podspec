@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIKitToolOC'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'UIKitToolOC 常用的组件库.'
   s.homepage         = 'https://github.com/kenan0620/UIKitToolOC'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -43,6 +43,11 @@ Pod::Spec.new do |s|
       ss.dependency 'CategoryToolOC/Date'
       ss.dependency 'CategoryToolOC/UIColor'
       ss.dependency 'CategoryToolOC/UIFont'
+  end
+  
+  s.subspec 'UISwitch' do |ss|
+      ss.source_files =
+      'UIKitToolOC/Classes/{*}Switch.{h,m}'
   end
   
   s.subspec 'UITextField' do |ss|
