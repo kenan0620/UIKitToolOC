@@ -24,25 +24,29 @@ pod 'UIKitToolOC'
 
 TextSwitch Masonry
 ```
-TextSwitch *switch  = [[TextSwitch alloc] init];
-switch.style = SwitchStyleNoBorder;
-switch.onTintColor = [UIColor colorWithRed:0/255.0 green:102/255.0 blue:255/255.0 alpha:1.0];
-switch.tintColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1.0];
-switch.thumbTintColor = [UIColor whiteColor];
-switch.onText = @"是";
-switch.offText = @"否";
-switch.textFont = [UIFont systemFontOfSize:14 weight:(UIFontWeightRegular)];
-[switch addTarget:self action:@selector(handleSwitchEvent:) forControlEvents:UIControlEventValueChanged];
-[self.view addSubview:switch];
-[switch mas_makeConstraints:^(MASConstraintMaker *make) {
+TextSwitch *textSwitch  = [[TextSwitch alloc] init];
+textSwitch.style = SwitchStyleNoBorder;
+textSwitch.onTintColor = [UIColor colorWithRed:0/255.0 green:102/255.0 blue:255/255.0 alpha:1.0];
+textSwitch.tintColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1.0];
+textSwitch.thumbTintColor = [UIColor whiteColor];
+textSwitch.onText = @"是";
+textSwitch.offText = @"否";
+textSwitch.textFont = [UIFont systemFontOfSize:14 weight:(UIFontWeightRegular)];
+[textSwitch addTarget:self action:@selector(handleSwitchEvent:) forControlEvents:UIControlEventValueChanged];
+[self.view addSubview:textSwitch];
+[textSwitch mas_makeConstraints:^(MASConstraintMaker *make) {
     make.center.equalTo(self.view);
     make.size.mas_equalTo(CGSizeMake(67, 32));
 }];
+
+- (void)handleSwitchEvent:(TextSwitch *)sender{
+    
+}
 ```
 
 TextSwitch Frame
 ```
-TextSwitch *switch  = [[TextSwitch alloc] initWithFrame:CGRectMake(0, 0, 67, 32)];
+TextSwitch *textSwitch  = [[TextSwitch alloc] initWithFrame:CGRectMake(0, 0, 67, 32)];
 ```
 
 ## Author
