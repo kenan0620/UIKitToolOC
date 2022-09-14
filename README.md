@@ -20,6 +20,24 @@ it, simply add the following line to your Podfile:
 pod 'UIKitToolOC'
 ```
 
+## Usage
+###TextSwitch
+```
+TextSwitch *switch0  = [[TextSwitch alloc] init];
+switch0.style = SwitchStyleNoBorder;
+switch0.onTintColor = [UIColor colorWithRed:0/255.0 green:102/255.0 blue:255/255.0 alpha:1.0];
+switch0.tintColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1.0];
+switch0.thumbTintColor = [UIColor whiteColor];
+switch0.onText = @"是";
+switch0.offText = @"否";
+switch0.textFont = [UIFont systemFontOfSize:14 weight:(UIFontWeightRegular)];
+[switch0 addTarget:self action:@selector(handleSwitchEvent:) forControlEvents:UIControlEventValueChanged];
+[self.view addSubview:switch0];
+[switch0 mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.center.equalTo(self.view);
+    make.size.mas_equalTo(CGSizeMake(67, 32));
+}];
+```
 ## Author
 
 kenan, coenen@aliyun.com
