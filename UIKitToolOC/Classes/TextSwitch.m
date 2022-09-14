@@ -25,11 +25,9 @@
 @property (nonatomic, strong) UILabel *offLabel;
 /// 边框
 @property (nonatomic, strong) UIView *borderView;
-
 @end
 
 @implementation TextSwitch
-
 - (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:[self roundRect:frame]];
     if (self) {
@@ -61,17 +59,13 @@
 - (void)layoutSubviews{
     [super layoutSubviews];
     self.containerView.frame = self.bounds;
-    
     CGFloat itemWidth = CGRectGetWidth(self.containerView.bounds);
     CGFloat itemHeight = CGRectGetHeight(self.containerView.bounds);
-    
-    self.containerView.backgroundColor = [UIColor redColor];
+    self.containerView.backgroundColor = [UIColor clearColor];
     CGFloat cornerRadius = itemHeight / 2.0;
     self.containerView.layer.cornerRadius = cornerRadius;
     self.containerView.layer.masksToBounds = YES;
-    
     CGFloat margin = (itemHeight - ThumbTintWidth) / 2.0;
-    
     self.borderView.frame = self.bounds;
     self.borderView.layer.borderWidth = 1.0;
     self.borderView.layer.cornerRadius = cornerRadius;
@@ -86,15 +80,12 @@
         self.offContentView.frame = CGRectMake(itemWidth,0, itemWidth, itemHeight);
         self.thumbTintView.frame = CGRectMake(itemWidth - margin - ThumbTintWidth, margin, ThumbTintWidth, ThumbTintWidth);
     }
-    
     CGFloat labelHeight = 20.0f;
     CGFloat labelMargin = cornerRadius - (sqrtf(powf(cornerRadius, 2) - powf(labelHeight / 2.0, 2))) + margin;
-    
     self.onLabel.frame = CGRectMake(labelMargin,
                                     cornerRadius - labelHeight / 2.0,
                                     itemWidth - labelMargin - ThumbTintWidth - 2 * margin,
                                     labelHeight);
-    
     self.offLabel.frame = CGRectMake(ThumbTintWidth + 2 * margin,
                                      cornerRadius - labelHeight / 2.0,
                                      itemWidth - labelMargin - ThumbTintWidth - 2 * margin,
@@ -105,16 +96,14 @@
 
 - (void)config{
     self.backgroundColor = [UIColor clearColor];
-    
     _style = SwitchStyleNoBorder;
-    
     _onTintColor = [UIColor colorWithRed:0/255.0 green:102/255.0 blue:255/255.0 alpha:1.0];
     _onTextColor = [UIColor whiteColor];
     _tintColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1.0];
     _offTextColor = _onTextColor;
     _thumbTintColor = [UIColor whiteColor];
     _textFont = [UIFont systemFontOfSize:14];
-    
+
     _containerView = [[UIView alloc] initWithFrame:self.bounds];
     _containerView.backgroundColor = [UIColor clearColor];
     [self addSubview:_containerView];
@@ -136,7 +125,7 @@
     
     _onLabel = [[UILabel alloc] initWithFrame:CGRectZero];
     _onLabel.backgroundColor = [UIColor clearColor];
-    _onLabel.textAlignment = NSTextAlignmentLeft;
+    _onLabel.textAlignment = NSTextAlignmentCenter;
     _onLabel.textColor = _onTextColor;
     _onLabel.font = _textFont;
     _onLabel.text = _onText;
@@ -144,7 +133,7 @@
     
     _offLabel = [[UILabel alloc] initWithFrame:CGRectZero];
     _offLabel.backgroundColor = [UIColor clearColor];
-    _offLabel.textAlignment = NSTextAlignmentRight;
+    _offLabel.textAlignment = NSTextAlignmentCenter;
     _offLabel.textColor = _offTextColor;
     _offLabel.font = _textFont;
     _offLabel.text = _offText;
@@ -166,15 +155,12 @@
 
 - (CGRect)roundRect:(CGRect)frameOrBounds{
     CGRect viewRect = frameOrBounds;
-    
     //    if (viewRect.size.height > SwitchMaxHeight) {
     //        viewRect.size.height = SwitchMaxHeight;
     //    }
-    //
     //    if (viewRect.size.height < SwitchMinHeight) {
     //        viewRect.size.height = SwitchMinHeight;
     //    }
-    
     //    if (viewRect.size.width < SwitchMinWidth) {
     //        viewRect.size.width = SwitchMinWidth;
     //    }
@@ -215,9 +201,7 @@
 - (void)scaleThumbTintViewFrame:(BOOL)scale{
     CGFloat margin = (CGRectGetHeight(self.bounds) - ThumbTintWidth) / 2.0;
     CGFloat offset = 6.0f;
-    
     CGRect preFrame = self.thumbTintView.frame;
-    
     if (self.isOn) {
         self.thumbTintView.frame = CGRectMake(CGRectGetWidth(self.containerView.bounds) - ThumbTintWidth - margin - (scale ? offset : 0),
                                               margin,
@@ -271,7 +255,6 @@
             _borderView.hidden = NO;
             _borderView.layer.borderColor = _on ? _onTintColor.CGColor : _tintColor.CGColor;
         }
-        
         [self setNeedsLayout];
     }
 }
@@ -286,7 +269,6 @@
                 _borderView.layer.borderColor = _onTintColor.CGColor;
                 _thumbTintView.backgroundColor = _onTintColor;
             }
-            
             _onLabel.textColor = _onTintColor;
         }
     }
@@ -311,7 +293,6 @@
 - (void)setTintColor:(UIColor *)tintColor{
     if (_tintColor != tintColor) {
         _tintColor = tintColor;
-        
         if (_style == SwitchStyleNoBorder) {
             _offContentView.backgroundColor = tintColor;
         } else {
@@ -327,7 +308,6 @@
 - (void)setOffTextColor:(UIColor *)offTextColor{
     if (_offTextColor != offTextColor) {
         _offTextColor = offTextColor;
-        
         if (_style == SwitchStyleNoBorder) {
             _offLabel.textColor = _offTextColor;
         }
@@ -365,35 +345,27 @@
     if (_on == on) {
         return;
     }
-    
     _on = on;
-    
     CGFloat margin = (CGRectGetHeight(self.bounds) - ThumbTintWidth) / 2.0;
-    
     CGRect onFrame = self.onContentView.frame;
     CGRect offFrame = self.offContentView.frame;
-    CGRect knobFrame = self.thumbTintView.frame;
-    
+    CGRect thumbTintViewFrame = self.thumbTintView.frame;
     if (!self.isOn) {
         // frame of off status
         self.onContentView.frame = CGRectMake(-1 * CGRectGetWidth(self.containerView.bounds),
                                               0,
                                               CGRectGetWidth(self.containerView.bounds),
                                               CGRectGetHeight(self.containerView.bounds));
-        
         self.offContentView.frame = CGRectMake(0,
                                                0,
                                                CGRectGetWidth(self.containerView.bounds),
                                                CGRectGetHeight(self.containerView.bounds));
-        
         self.thumbTintView.frame = CGRectMake(margin,
                                          margin,
                                          ThumbTintWidth,
                                          ThumbTintWidth);
-        
         if (_style == SwitchStyleBorder) {
             self.borderView.layer.borderColor = _tintColor.CGColor;
-            
             self.thumbTintView.backgroundColor = _tintColor;
         }
     } else {
@@ -402,20 +374,16 @@
                                               0,
                                               CGRectGetWidth(self.containerView.bounds),
                                               CGRectGetHeight(self.containerView.bounds));
-        
         self.offContentView.frame = CGRectMake(CGRectGetWidth(self.containerView.bounds),
                                                0,
                                                CGRectGetWidth(self.containerView.bounds),
                                                CGRectGetHeight(self.containerView.bounds));
-        
         self.thumbTintView.frame = CGRectMake(CGRectGetWidth(self.containerView.bounds) - margin - ThumbTintWidth,
                                          margin,
                                          ThumbTintWidth,
                                          ThumbTintWidth);
-        
         if (_style == SwitchStyleBorder) {
             self.borderView.layer.borderColor = _onTintColor.CGColor;
-            
             self.thumbTintView.backgroundColor = _onTintColor;
         }
     }
@@ -451,16 +419,16 @@
         [animation4 setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
         [self.offContentView.layer addAnimation:animation4 forKey:NULL];
         
-        // knob
+        // thumbTintView
         CABasicAnimation *animation5 = [CABasicAnimation animationWithKeyPath:@"bounds"];
-        [animation5 setFromValue:[NSValue valueWithCGRect:CGRectMake(0, 0, CGRectGetWidth(knobFrame), CGRectGetHeight(knobFrame))]];
+        [animation5 setFromValue:[NSValue valueWithCGRect:CGRectMake(0, 0, CGRectGetWidth(thumbTintViewFrame), CGRectGetHeight(thumbTintViewFrame))]];
         [animation5 setToValue:[NSValue valueWithCGRect:CGRectMake(0, 0, CGRectGetWidth(self.thumbTintView.frame), CGRectGetHeight(self.thumbTintView.frame))]];
         [animation5 setDuration:AnimatedTime];
         [animation5 setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
         [self.thumbTintView.layer addAnimation:animation5 forKey:NULL];
         
         CABasicAnimation *animation6 = [CABasicAnimation animationWithKeyPath:@"position"];
-        [animation6 setFromValue:[NSValue valueWithCGPoint:CGPointMake(CGRectGetMidX(knobFrame), CGRectGetMidY(knobFrame))]];
+        [animation6 setFromValue:[NSValue valueWithCGPoint:CGPointMake(CGRectGetMidX(thumbTintViewFrame), CGRectGetMidY(thumbTintViewFrame))]];
         [animation6 setToValue:[NSValue valueWithCGPoint:CGPointMake(CGRectGetMidX(self.thumbTintView.frame), CGRectGetMidY(self.thumbTintView.frame))]];
         [animation6 setDuration:AnimatedTime];
         [animation6 setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];

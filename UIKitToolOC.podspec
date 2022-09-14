@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIKitToolOC'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
   s.summary          = 'UIKitToolOC 常用的组件库.'
   s.homepage         = 'https://github.com/kenan0620/UIKitToolOC'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
