@@ -22,6 +22,9 @@ pod 'UIKitToolOC'
 
 ## Usage
 
+TextSwitch 
+![TextSwitch是](https://github.com/kenan0620/UIKitToolOC/blob/main/Example/UIKitToolOC/TextSwitch%E6%98%AF.jpg)
+![TextSwitch否](https://github.com/kenan0620/UIKitToolOC/blob/main/Example/UIKitToolOC/TextSwitch%E5%90%A6.jpg)
 TextSwitch Masonry
 ```
 TextSwitch *textSwitch  = [[TextSwitch alloc] init];
