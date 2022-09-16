@@ -39,7 +39,6 @@
     for (int i = 0; i < _idCard.length; i ++) {
         [self.value addObject:[NSString stringWithFormat:@"%@",[_idCard substringWithRange:NSMakeRange(i, 1)]]];
     }
-    NSLog(@"设置的内容是 %@",self.value);
 }
 
 - (void)configUI{
@@ -78,9 +77,11 @@
     [self.deleteBtn addTarget:self action:@selector(deleteBtnClick) forControlEvents:(UIControlEventTouchUpInside)];
 }
 
+//MARK: -----------------------Setter-----------------------
 - (void)setCursorLocation:(int)cursorLocation{
     _cursorLocation = cursorLocation;
 }
+
 - (void)setDeleteImage:(UIImage *)deleteImage{
     _deleteImage = deleteImage;
     [self.deleteBtn setImage:_deleteImage forState:(UIControlStateNormal)];

@@ -36,6 +36,7 @@
 
     }
 }
+
 - (void)configKeyboard{
     self.delegate = self;
     self.inputDelegate = self;
@@ -86,7 +87,7 @@
     if (!_keyboard) {
         _keyboard = [[KeyboardIDCardView alloc] init];
         _keyboard.cursorLocation = 0;
-        _keyboard.deleteImage = [UIImage imageNamed:@"KeyboardIdCardDeleteImage"];
+        _keyboard.deleteImage = [UIImage imageNamed:@"KeyboardDeleteImage"];
     }
     
     return _keyboard;

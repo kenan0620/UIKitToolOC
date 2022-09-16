@@ -1,6 +1,6 @@
 {
   "name": "UIKitToolOC",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "summary": "UIKitToolOC 常用的组件库.",
   "homepage": "https://github.com/kenan0620/UIKitToolOC",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/kenan0620/UIKitToolOC.git",
-    "tag": "0.1.8"
+    "tag": "0.2.0"
   },
   "social_media_url": "https://www.jianshu.com/u/aa2d07ae7c2f",
   "platforms": {
@@ -82,7 +82,7 @@
 
         ]
       },
-      "resources": "UIKitToolOC/Classes/KeyboardMedia{*}"
+      "resources": "UIKitToolOC/Classes/KeyboardImage.bundle"
     }
   ]
 }
