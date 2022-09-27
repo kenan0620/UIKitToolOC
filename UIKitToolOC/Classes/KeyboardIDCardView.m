@@ -99,11 +99,21 @@
 
 //MARK: -----------------------Event-----------------------
 - (void)itemBtnClick:(UIButton *)sender{
+    bool isValid = false;
     if (self.value.count == 18) {
+        NSArray *calculateList = @[@7, @9, @10, @5, @8, @4, @2, @1, @6, @3, @7, @9, @10, @5, @8, @4, @2, @0];
+        NSArray *checkList = @[@"1",@"0",@"X",@"9",@"8",@"7",@"6",@"5",@"4",@"3",@"2",];
+        int sum = 0;
+        for (int i = 0; i < self.value.count - 1; i ++) {
+            sum += [self.value[i] intValue] * [calculateList[i] intValue];
+        }
+        int checkIndex = sum % 11;
+        isValid = [checkList[checkIndex] isEqualToString:[NSString stringWithFormat:@"%d",[self.value.lastObject intValue]]];
+        
         self.idcardBlock([[self.value.copy componentsJoinedByString:@","] stringByReplacingOccurrencesOfString:@"," withString:@""],
                          self.cursorLocation,
                          true,
-                         false);
+                         isValid);
         return;
     }
     if (sender.tag == 9) {
@@ -118,7 +128,6 @@
         [self.value insertObject:[NSString stringWithFormat:@"%ld",sender.tag + 1] atIndex:self.cursorLocation];
     }
     self.cursorLocation += 1;
-    bool isValid = false;
     if (self.value.count == 18) {
         NSArray *calculateList = @[@7, @9, @10, @5, @8, @4, @2, @1, @6, @3, @7, @9, @10, @5, @8, @4, @2, @0];
         NSArray *checkList = @[@"1",@"0",@"X",@"9",@"8",@"7",@"6",@"5",@"4",@"3",@"2",];
