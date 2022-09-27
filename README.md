@@ -52,6 +52,19 @@ TextSwitch Frame
 TextSwitch *textSwitch  = [[TextSwitch alloc] initWithFrame:CGRectMake(0, 0, 67, 32)];
 ```
 
+IDCardTextField 
+![身份证键盘](https://github.com/kenan0620/UIKitToolOC/blob/main/Example/UIKitToolOC/KeyBoard.jpg)
+
+```
+- (IDCardTextField *)idCardTextField {
+    if (!_idCardTextField) {
+        _idCardTextField = [[IDCardTextField alloc] init];
+    }
+    
+    return _idNumberTextField;
+}
+```
+
 ## Author
 
 kenan, coenen@aliyun.com
