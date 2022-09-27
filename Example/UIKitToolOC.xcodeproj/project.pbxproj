@@ -10,6 +10,7 @@
 		191F0BA5BCB932E5A6E1EE8F /* Pods_UIKitToolOC_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EE007F637F99E503FE1E88 /* Pods_UIKitToolOC_Tests.framework */; };
 		272D0EC728D1D5A8000EF01A /* TextSwitch是.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 272D0EC528D1D5A8000EF01A /* TextSwitch是.jpg */; };
 		272D0EC828D1D5A8000EF01A /* TextSwitch否.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 272D0EC628D1D5A8000EF01A /* TextSwitch否.jpg */; };
+		273BEA7228E2CD0D00BE968F /* KeyBoard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 273BEA7128E2CD0D00BE968F /* KeyBoard.jpg */; };
 		430608EBD10107E64A519F77 /* Pods_UIKitToolOC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC44D9659215B0B7BF83458A /* Pods_UIKitToolOC_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		272D0EC528D1D5A8000EF01A /* TextSwitch是.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "TextSwitch是.jpg"; sourceTree = "<group>"; };
 		272D0EC628D1D5A8000EF01A /* TextSwitch否.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "TextSwitch否.jpg"; sourceTree = "<group>"; };
+		273BEA7128E2CD0D00BE968F /* KeyBoard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KeyBoard.jpg; sourceTree = "<group>"; };
 		3AA06C79950A49CF816BE76D /* Pods-UIKitToolOC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitToolOC_Example.debug.xcconfig"; path = "Target Support Files/Pods-UIKitToolOC_Example/Pods-UIKitToolOC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* UIKitToolOC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitToolOC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -104,6 +106,7 @@
 			children = (
 				272D0EC628D1D5A8000EF01A /* TextSwitch否.jpg */,
 				272D0EC528D1D5A8000EF01A /* TextSwitch是.jpg */,
+				273BEA7128E2CD0D00BE968F /* KeyBoard.jpg */,
 			);
 			name = Eg;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273BEA7228E2CD0D00BE968F /* KeyBoard.jpg in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				272D0EC828D1D5A8000EF01A /* TextSwitch否.jpg in Resources */,
 				272D0EC728D1D5A8000EF01A /* TextSwitch是.jpg in Resources */,

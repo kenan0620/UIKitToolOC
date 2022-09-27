@@ -87,7 +87,10 @@
     if (!_keyboard) {
         _keyboard = [[KeyboardIDCardView alloc] init];
         _keyboard.cursorLocation = 0;
-        _keyboard.deleteImage = [UIImage imageNamed:@"KeyboardDeleteImage"];
+        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"KeyboardImage" ofType:@"bundle"];
+        NSString *imgPath= [bundlePath stringByAppendingPathComponent:@"KeyboardDeleteImage.png"];
+        UIImage *image = [UIImage imageWithContentsOfFile:imgPath];
+        _keyboard.deleteImage = image;
     }
     
     return _keyboard;
