@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIKitToolOC'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'UIKitToolOC 常用的组件库.'
   s.homepage         = 'https://github.com/kenan0620/UIKitToolOC'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -31,6 +31,13 @@ Pod::Spec.new do |s|
       ss.source_files = 'UIKitToolOC/Classes/Pop{*}.{h,m}'
       ss.dependency 'Masonry'
       ss.dependency 'CategoryToolOC/UIView'
+  end
+  
+  s.subspec 'RichView' do |ss|
+      ss.source_files =
+      'UIKitToolOC/Classes/AttrModel.{h,m}',
+      'UIKitToolOC/Classes/Rich{*}.{h,m}'
+      ss.dependency 'Masonry'
   end
   
   s.subspec 'UILabel' do |ss|
