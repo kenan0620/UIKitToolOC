@@ -73,17 +73,17 @@
     // Configure the view for the selected state
 }
 
-- (UILabel *)titleRichLabel{
+- (YYLabel *)titleRichLabel{
     if (!_titleRichLabel) {
-        _titleRichLabel = [[UILabel alloc] init];
+        _titleRichLabel = [[YYLabel alloc] init];
     }
     
     return _titleRichLabel;
 }
 
-- (UILabel *)valueRichLabel{
+- (YYLabel *)valueRichLabel{
     if (!_valueRichLabel) {
-        _valueRichLabel = [[UILabel alloc] init];
+        _valueRichLabel = [[YYLabel alloc] init];
         _valueRichLabel.textAlignment = NSTextAlignmentRight;
         _valueRichLabel.numberOfLines = 0;
     }
