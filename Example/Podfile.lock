@@ -12,34 +12,44 @@ PODS:
   - CategoryToolOC/UIImage (0.2.2)
   - CategoryToolOC/UIView (0.2.1)
   - Masonry (1.1.0)
-  - UIKitToolOC (0.2.3):
-    - UIKitToolOC/Adapt (= 0.2.3)
-    - UIKitToolOC/Network (= 0.2.3)
-    - UIKitToolOC/Pop (= 0.2.3)
-    - UIKitToolOC/RichView (= 0.2.3)
-    - UIKitToolOC/UILabel (= 0.2.3)
-    - UIKitToolOC/UIPickerView (= 0.2.3)
-    - UIKitToolOC/UISwitch (= 0.2.3)
-    - UIKitToolOC/UITextField (= 0.2.3)
-  - UIKitToolOC/Adapt (0.2.3)
-  - UIKitToolOC/Network (0.2.3):
+  - UIKitToolOC (0.2.4):
+    - UIKitToolOC/Adapt (= 0.2.4)
+    - UIKitToolOC/Network (= 0.2.4)
+    - UIKitToolOC/Pop (= 0.2.4)
+    - UIKitToolOC/RichView (= 0.2.4)
+    - UIKitToolOC/UILabel (= 0.2.4)
+    - UIKitToolOC/UIPickerView (= 0.2.4)
+    - UIKitToolOC/UISwitch (= 0.2.4)
+    - UIKitToolOC/UITextField (= 0.2.4)
+    - YYText
+  - UIKitToolOC/Adapt (0.2.4):
+    - YYText
+  - UIKitToolOC/Network (0.2.4):
     - YTKNetwork
-  - UIKitToolOC/Pop (0.2.3):
+    - YYText
+  - UIKitToolOC/Pop (0.2.4):
     - CategoryToolOC/UIView
     - Masonry
-  - UIKitToolOC/RichView (0.2.3):
+    - YYText
+  - UIKitToolOC/RichView (0.2.4):
     - Masonry
-  - UIKitToolOC/UILabel (0.2.3)
-  - UIKitToolOC/UIPickerView (0.2.3):
+    - YYText
+  - UIKitToolOC/UILabel (0.2.4):
+    - YYText
+  - UIKitToolOC/UIPickerView (0.2.4):
     - CategoryToolOC/Date
     - CategoryToolOC/UIColor
     - CategoryToolOC/UIFont
     - Masonry
-  - UIKitToolOC/UISwitch (0.2.3)
-  - UIKitToolOC/UITextField (0.2.3):
+    - YYText
+  - UIKitToolOC/UISwitch (0.2.4):
+    - YYText
+  - UIKitToolOC/UITextField (0.2.4):
     - CategoryToolOC/UIImage
+    - YYText
   - YTKNetwork (3.0.6):
     - AFNetworking/NSURLSession (~> 4.0)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - UIKitToolOC (from `../`)
@@ -50,6 +60,7 @@ SPEC REPOS:
     - CategoryToolOC
     - Masonry
     - YTKNetwork
+    - YYText
 
 EXTERNAL SOURCES:
   UIKitToolOC:
@@ -59,8 +70,9 @@ SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   CategoryToolOC: 66c7d06707f5410b2c02192abce049f81dcabe2c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  UIKitToolOC: 6c3dbcb6da039310c09261a9e046b89137e82aea
+  UIKitToolOC: fe03c4f71b6b95affdeff5ff7631bec7cb9052e6
   YTKNetwork: c16be90b06be003de9e9cd0d3b187cc8eaf35c04
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
 PODFILE CHECKSUM: ac1748ac8c044e36d5409e8a2dee47a2e5a4422b
 

@@ -8,11 +8,12 @@
 #import "RichListTVCell.h"
 
 #import "AttrModel.h"
+#import <YYText/YYText.h>
 #import <Masonry/Masonry.h>
 
 @interface RichListTVCell ()
-@property (nonatomic, strong) UILabel *titleRichLabel;
-@property (nonatomic, strong) UILabel *valueRichLabel;
+@property (nonatomic, strong) YYLabel *titleRichLabel;
+@property (nonatomic, strong) YYLabel *valueRichLabel;
 @property (nonatomic, strong) UIView *dividerView;
 @end
 

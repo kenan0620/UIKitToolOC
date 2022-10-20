@@ -1,6 +1,6 @@
 {
   "name": "UIKitToolOC",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "summary": "UIKitToolOC 常用的组件库.",
   "homepage": "https://github.com/kenan0620/UIKitToolOC",
   "license": {
@@ -12,13 +12,18 @@
   },
   "source": {
     "git": "https://github.com/kenan0620/UIKitToolOC.git",
-    "tag": "0.2.3"
+    "tag": "0.2.4"
   },
   "social_media_url": "https://www.jianshu.com/u/aa2d07ae7c2f",
   "platforms": {
     "ios": "11.0"
   },
   "source_files": "UIKitToolOC/Classes/UIKitToolOC.h",
+  "dependencies": {
+    "YYText": [
+
+    ]
+  },
   "subspecs": [
     {
       "name": "Adapt",

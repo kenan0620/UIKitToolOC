@@ -7,13 +7,14 @@
 
 #import "RichSpaceBetweenView.h"
 
+#import <YYText/YYText.h>
 #import <Masonry/Masonry.h>
 
 @interface RichSpaceBetweenView ()
 /// 标题
-@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) YYLabel *titleLabel;
 /// 内容
-@property (nonatomic, strong) UILabel *valueLabel;
+@property (nonatomic, strong) YYLabel *valueLabel;
 @end
 
 @implementation RichSpaceBetweenView
@@ -70,17 +71,17 @@
 }
 
 //MARK: -----------------------UILazy-----------------------
-- (UILabel *)titleLabel{
+- (YYLabel *)titleLabel{
     if (!_titleLabel) {
-        _titleLabel = [[UILabel alloc] init];
+        _titleLabel = [[YYLabel alloc] init];
     }
     
     return _titleLabel;
 }
 
-- (UILabel *)valueLabel{
+- (YYLabel *)valueLabel{
     if (!_valueLabel) {
-        _valueLabel = [[UILabel alloc] init];
+        _valueLabel = [[YYLabel alloc] init];
         _valueLabel.textAlignment = NSTextAlignmentRight;
     }
     
