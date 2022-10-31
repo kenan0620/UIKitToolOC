@@ -12,39 +12,39 @@ PODS:
   - CategoryToolOC/UIImage (0.2.2)
   - CategoryToolOC/UIView (0.2.1)
   - Masonry (1.1.0)
-  - UIKitToolOC (0.2.4):
-    - UIKitToolOC/Adapt (= 0.2.4)
-    - UIKitToolOC/Network (= 0.2.4)
-    - UIKitToolOC/Pop (= 0.2.4)
-    - UIKitToolOC/RichView (= 0.2.4)
-    - UIKitToolOC/UILabel (= 0.2.4)
-    - UIKitToolOC/UIPickerView (= 0.2.4)
-    - UIKitToolOC/UISwitch (= 0.2.4)
-    - UIKitToolOC/UITextField (= 0.2.4)
+  - UIKitToolOC (0.2.5):
+    - UIKitToolOC/Adapt (= 0.2.5)
+    - UIKitToolOC/Network (= 0.2.5)
+    - UIKitToolOC/Pop (= 0.2.5)
+    - UIKitToolOC/RichView (= 0.2.5)
+    - UIKitToolOC/UILabel (= 0.2.5)
+    - UIKitToolOC/UIPickerView (= 0.2.5)
+    - UIKitToolOC/UISwitch (= 0.2.5)
+    - UIKitToolOC/UITextField (= 0.2.5)
     - YYText
-  - UIKitToolOC/Adapt (0.2.4):
+  - UIKitToolOC/Adapt (0.2.5):
     - YYText
-  - UIKitToolOC/Network (0.2.4):
+  - UIKitToolOC/Network (0.2.5):
     - YTKNetwork
     - YYText
-  - UIKitToolOC/Pop (0.2.4):
+  - UIKitToolOC/Pop (0.2.5):
     - CategoryToolOC/UIView
     - Masonry
     - YYText
-  - UIKitToolOC/RichView (0.2.4):
+  - UIKitToolOC/RichView (0.2.5):
     - Masonry
     - YYText
-  - UIKitToolOC/UILabel (0.2.4):
+  - UIKitToolOC/UILabel (0.2.5):
     - YYText
-  - UIKitToolOC/UIPickerView (0.2.4):
+  - UIKitToolOC/UIPickerView (0.2.5):
     - CategoryToolOC/Date
     - CategoryToolOC/UIColor
     - CategoryToolOC/UIFont
     - Masonry
     - YYText
-  - UIKitToolOC/UISwitch (0.2.4):
+  - UIKitToolOC/UISwitch (0.2.5):
     - YYText
-  - UIKitToolOC/UITextField (0.2.4):
+  - UIKitToolOC/UITextField (0.2.5):
     - CategoryToolOC/UIImage
     - YYText
   - YTKNetwork (3.0.6):
@@ -70,7 +70,7 @@ SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   CategoryToolOC: 66c7d06707f5410b2c02192abce049f81dcabe2c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  UIKitToolOC: fe03c4f71b6b95affdeff5ff7631bec7cb9052e6
+  UIKitToolOC: 8093b84b52ef854361720c41ca01c1222e7e9ae9
   YTKNetwork: c16be90b06be003de9e9cd0d3b187cc8eaf35c04
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 

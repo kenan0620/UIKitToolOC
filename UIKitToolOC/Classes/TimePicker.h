@@ -63,6 +63,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否展示分割线
 @property (nonatomic, assign) bool isShowLine;
 
+///中间时间框
+@property (nonatomic, strong) UIColor *layerColor;
+
 ///确定按钮文本 默认保存
 @property (nonatomic, copy) NSString *confirmText;
 ///确定按钮颜色 默认0066FF

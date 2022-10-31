@@ -45,20 +45,6 @@
         [self configSelectRow:self.defaultDate YearRow:501 IsScroll:true];
         [self.cancelBtn addTarget:self action:@selector(cancelBtnClick) forControlEvents:(UIControlEventTouchUpInside)];
         [self.confirmBtn addTarget:self action:@selector(confirmBtnClick) forControlEvents:(UIControlEventTouchUpInside)];
-        UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(14, [UIScreen mainScreen].bounds.size.height / 2 - 35 - 44, [UIScreen mainScreen].bounds.size.width - 28, 70) cornerRadius:5];
-        CAShapeLayer *layer = [[CAShapeLayer alloc] init];
-        layer.path = path.CGPath;
-        layer.fillColor = UIColor.clearColor.CGColor; // 空心
-        layer.strokeColor = [UIColor colorHex:@"#0066FF"].CGColor;
-        layer.lineWidth = 2;
-        [self.bgView.layer addSublayer:layer];
-        
-        for (UIView *view in self.timePicker.subviews) {
-            NSLog(@"自视图是 %@",NSStringFromClass([view class]));
-            if ([NSStringFromClass([view class]) isEqualToString:@"_UIPickerHighlightView"]) {
-                view.hidden = true;
-            }
-        }
     }
     
     return self;
@@ -89,6 +75,24 @@
 #pragma mark - Setter
 -(void)setMode:(TimePickerMode)mode{
     _mode = mode;
+}
+
+- (void)setLayerColor:(UIColor *)layerColor{
+    _layerColor = layerColor;
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(28, [UIScreen mainScreen].bounds.size.height / 2 - 35 - 44, [UIScreen mainScreen].bounds.size.width - 56, 70) cornerRadius:5];
+    CAShapeLayer *layer = [[CAShapeLayer alloc] init];
+    layer.path = path.CGPath;
+    layer.fillColor = UIColor.clearColor.CGColor; // 空心
+    layer.strokeColor = _layerColor.CGColor;
+    layer.lineWidth = 2;
+    [self.bgView.layer addSublayer:layer];
+    
+    for (UIView *view in self.timePicker.subviews) {
+        NSLog(@"自视图是 %@",NSStringFromClass([view class]));
+        if ([NSStringFromClass([view class]) isEqualToString:@"_UIPickerHighlightView"]) {
+            view.hidden = true;
+        }
+    }
 }
 
 - (void)setIsShowLine:(bool)isShowLine{
