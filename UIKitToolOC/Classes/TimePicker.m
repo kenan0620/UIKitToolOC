@@ -345,7 +345,7 @@
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setYear:self.selectYear];
     [components setMonth:self.selectMonth];
-    NSInteger days = [calendar dateFromComponents:components].day;
+    NSInteger days = [calendar dateFromComponents:components].days;
     if (self.selectDay > days) {
         self.selectDay = days;
         isReturn = true;
