@@ -27,17 +27,14 @@
         [self.contentView addSubview:self.valueRichLabel];
         [self.contentView addSubview:self.dividerView];
         [self.titleRichLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.greaterThanOrEqualTo(self.contentView).offset(14);
-            make.left.equalTo(self.contentView).offset(14);
-            make.centerY.equalTo(self.contentView);
-            make.bottom.lessThanOrEqualTo(self.contentView).offset(-14);
+            make.top.left.equalTo(self.contentView).offset(14);
+            make.bottom.equalTo(self.contentView).offset(-14).priorityLow();
         }];
         [self.valueRichLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.greaterThanOrEqualTo(self.contentView).offset(14).priorityHigh();
-            make.left.greaterThanOrEqualTo(self.titleRichLabel.mas_right).offset(14);
+            make.top.equalTo(self.contentView).offset(14);
+            make.left.equalTo(self.titleRichLabel.mas_right).offset(14);
             make.right.equalTo(self.contentView).offset(-14);
-            make.centerY.equalTo(self.contentView);
-            make.bottom.lessThanOrEqualTo(self.contentView).offset(-14).priorityHigh();
+            make.bottom.equalTo(self.contentView).offset(-14).priorityHigh();
         }];
         [self.dividerView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.contentView).offset(14);
@@ -54,7 +51,25 @@
     _model = model;
     self.titleRichLabel.attributedText = _model.key;
     self.valueRichLabel.attributedText = _model.value;
+    self.valueRichLabel.textAlignment = _model.valueTextAlignment;
     self.dividerView.hidden = !_model.isShowLine;
+    if (_model.margin > 0){
+        [self.titleRichLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.contentView).offset(_model.margin);
+            make.bottom.equalTo(self.contentView).offset(-_model.margin).priorityLow();
+        }];
+        [self.valueRichLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.contentView).offset(_model.margin);
+            make.bottom.equalTo(self.contentView).offset(-_model.margin).priorityHigh();
+        }];
+    }
+    
+    if (_model.titleWidth > 0){
+        [self.titleRichLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(_model.titleWidth);
+        }];
+    }
+    
     if (_model.isUpdateLineSpace) {
         [self.dividerView mas_updateConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.contentView).offset(_model.lineSpace);
@@ -69,7 +84,7 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
 }
 

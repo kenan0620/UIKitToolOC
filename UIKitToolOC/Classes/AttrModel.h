@@ -22,6 +22,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) bool isUpdateLineSpace;
 /// 分割线位置
 @property (nonatomic, assign) CGFloat lineSpace;
+/// 高度
+@property (nonatomic, assign) CGFloat height;
+/// 控件与Cell间距
+@property (nonatomic, assign) CGFloat margin;
+/// 标题宽度
+@property (nonatomic, assign) CGFloat titleWidth;
+/// 内容换行对齐方式
+@property (nonatomic, assign) NSTextAlignment valueTextAlignment;
+
 @end
 
 NS_ASSUME_NONNULL_END

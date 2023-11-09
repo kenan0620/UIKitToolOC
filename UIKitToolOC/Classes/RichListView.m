@@ -33,9 +33,16 @@
 - (void)setModel:(NSArray<AttrModel *> *)model{
     _model = model;
     self.dataList = _model;
+    
+    CGFloat tabHeight = 0;
+    for (AttrModel *item in self.dataList) {
+        
+        tabHeight += item.height > 0 ? item.height : 48;
+    }
     [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(self.dataList.count * 48);
+        make.height.mas_equalTo(tabHeight);
     }];
+    
     [self.tableView reloadData];
 }
 
@@ -56,7 +63,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return  48;
+    return  self.dataList[indexPath.row].height > 0 ? self.dataList[indexPath.row].height : 48;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -72,7 +79,6 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.layer.cornerRadius = 5;
-        _tableView.rowHeight = 48;
         _tableView.scrollEnabled = false;
         _tableView.backgroundColor = [UIColor whiteColor];
         /// 分割线的样式

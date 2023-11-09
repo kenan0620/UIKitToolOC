@@ -12,39 +12,39 @@ PODS:
   - CategoryToolOC/UIImage (0.2.2)
   - CategoryToolOC/UIView (0.2.1)
   - Masonry (1.1.0)
-  - UIKitToolOC (0.2.6):
-    - UIKitToolOC/Adapt (= 0.2.6)
-    - UIKitToolOC/Network (= 0.2.6)
-    - UIKitToolOC/Pop (= 0.2.6)
-    - UIKitToolOC/RichView (= 0.2.6)
-    - UIKitToolOC/UILabel (= 0.2.6)
-    - UIKitToolOC/UIPickerView (= 0.2.6)
-    - UIKitToolOC/UISwitch (= 0.2.6)
-    - UIKitToolOC/UITextField (= 0.2.6)
+  - UIKitToolOC (0.2.7):
+    - UIKitToolOC/Adapt (= 0.2.7)
+    - UIKitToolOC/Network (= 0.2.7)
+    - UIKitToolOC/Pop (= 0.2.7)
+    - UIKitToolOC/RichView (= 0.2.7)
+    - UIKitToolOC/UILabel (= 0.2.7)
+    - UIKitToolOC/UIPickerView (= 0.2.7)
+    - UIKitToolOC/UISwitch (= 0.2.7)
+    - UIKitToolOC/UITextField (= 0.2.7)
     - YYText
-  - UIKitToolOC/Adapt (0.2.6):
+  - UIKitToolOC/Adapt (0.2.7):
     - YYText
-  - UIKitToolOC/Network (0.2.6):
+  - UIKitToolOC/Network (0.2.7):
     - YTKNetwork
     - YYText
-  - UIKitToolOC/Pop (0.2.6):
+  - UIKitToolOC/Pop (0.2.7):
     - CategoryToolOC/UIView
     - Masonry
     - YYText
-  - UIKitToolOC/RichView (0.2.6):
+  - UIKitToolOC/RichView (0.2.7):
     - Masonry
     - YYText
-  - UIKitToolOC/UILabel (0.2.6):
+  - UIKitToolOC/UILabel (0.2.7):
     - YYText
-  - UIKitToolOC/UIPickerView (0.2.6):
+  - UIKitToolOC/UIPickerView (0.2.7):
     - CategoryToolOC/Date
     - CategoryToolOC/UIColor
     - CategoryToolOC/UIFont
     - Masonry
     - YYText
-  - UIKitToolOC/UISwitch (0.2.6):
+  - UIKitToolOC/UISwitch (0.2.7):
     - YYText
-  - UIKitToolOC/UITextField (0.2.6):
+  - UIKitToolOC/UITextField (0.2.7):
     - CategoryToolOC/UIImage
     - YYText
   - YTKNetwork (3.0.6):
@@ -67,13 +67,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   CategoryToolOC: 66c7d06707f5410b2c02192abce049f81dcabe2c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  UIKitToolOC: f1785a5fe4eec4a3cc0a1cd631655fe59d26cdef
+  UIKitToolOC: 05dbff2b21daeeb7a3d526fc68a8b72f877e40e5
   YTKNetwork: c16be90b06be003de9e9cd0d3b187cc8eaf35c04
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
 PODFILE CHECKSUM: ac1748ac8c044e36d5409e8a2dee47a2e5a4422b
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.12.1
