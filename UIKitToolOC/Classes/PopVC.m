@@ -63,6 +63,24 @@
     return popVC;
 }
 
++ (instancetype)presentAtView:(UIView *)popView
+                      PopType:(PopType)popType{
+    PopVC *popVC = [[PopVC alloc] init];
+    popVC.popType = popType;
+    
+    UIWindow *kwindow = [[[UIApplication sharedApplication] delegate] window];
+    popVC.frame = kwindow.bounds;
+    popVC.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
+    [kwindow.rootViewController.view addSubview:popVC];
+    //设置内容
+    popVC.popContentView = popView;
+    //设置约束
+    [popVC setUpView:popType];
+    //执行动画
+    [popVC startAnimat:popType];
+    return popVC;
+}
+
 //MARK: -----------------------KeyBoard 管理-----------------------
 
 - (void) keyBoardWillShow{

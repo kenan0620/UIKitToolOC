@@ -28,6 +28,15 @@ typedef enum : NSUInteger {
                     PopType:(PopType)popType;
 
 /**
+ 弹出视图在view上
+ 
+ @param popView 视图
+ @param popType 弹出格式
+ */
++ (instancetype)presentAtView:(UIView *)popView
+                    PopType:(PopType)popType;
+
+/**
  视图消失
  */
 - (void)dismiss;
